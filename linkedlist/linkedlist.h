@@ -3,12 +3,9 @@
  * @file    ${file_name}
  * @author  ${user}
  * @date    ${date}
- * @brief   
+ * @brief
  ********************************************************************************
  */
-
-#ifndef ${include_guard_symbol}
-#define ${include_guard_symbol}
 
 #ifdef __cplusplus
 extern "C" {
@@ -34,9 +31,7 @@ extern "C" {
  * GLOBAL FUNCTION PROTOTYPES
  ************************************/
 
-
 #ifdef __cplusplus
 }
 #endif
 
-#endif 
