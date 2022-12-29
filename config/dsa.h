@@ -50,6 +50,16 @@ extern "C" {
         return __;                                                                                 \
     }
 
+/// No-temp-var swap operation
+#define SWAP(a, b) (((a) ^= (b)), ((b) ^= (a)), ((a) ^= (b)))
+
+// inline void swap(int *a, int *b)
+// {
+//     *a ^= *b;
+//     *b ^= *a;
+//     *a ^= *b;
+//     return;
+// }
 /************************************
  * TYPEDEFS
  ************************************/

@@ -7,9 +7,6 @@
  */
 #include "sorting.h"
 
-/// No-temp-var swap operation
-#define SWAP(a, b) (((a) ^= (b)), ((b) ^= (a)), ((a) ^= (b)))
-
 dsa_err_t sorting_bubble_sort(list_t *list, bool ascending)
 {
     DSA_CHECK_ARG(list && list->data);

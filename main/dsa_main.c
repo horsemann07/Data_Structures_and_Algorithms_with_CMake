@@ -63,6 +63,12 @@ int main()
         list.data[i] = rand() % 10;
     }
     list_display_data(&list);
+    int min;
+    list_get_min(&list, &min);
+    printf("min %d\n", min);
 
-    return 0;
+    list_reverse(&list);
+    printf("reverse\n");
+    list_display_data(&list);
+    return DSA_OK;
 }

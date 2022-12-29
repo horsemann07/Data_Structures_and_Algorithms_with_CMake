@@ -29,6 +29,7 @@ typedef struct
 {
     int size;
     int *data;
+    uint32_t cindex;
 } list_t;
 
 /************************************
@@ -49,7 +50,7 @@ dsa_err_t list_insert_data(list_t *list, int data, int index);
 
 dsa_err_t list_delete_index(list_t *list, int index);
 
-dsa_err_t list_search_data(list_t *list, int key);
+dsa_err_t list_search_data(list_t *list, int key, uint32_t *index, bool sorted);
 
 dsa_err_t list_get(list_t *list, int index, int *value);
 
@@ -59,7 +60,7 @@ dsa_err_t list_get_max(list_t *list, uint32_t *max);
 
 dsa_err_t list_get_min(list_t *list, uint32_t *min);
 
-dsa_err_t list_reverse(list_t *list, list_t *rev_list);
+dsa_err_t list_reverse(list_t *list);
 
 dsa_err_t list_shift(list_t *list, list_t *shifted_list, bool left_shift);
 
