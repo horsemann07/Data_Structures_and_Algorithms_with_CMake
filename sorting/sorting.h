@@ -2,15 +2,18 @@
 #ifndef __SORTING_H__
 #define __SORTING_H__
 
-#include "dsa_config.h"
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-typedef struct
-{
-    int32_t *arr_base;
-    size_t size;
-} list_t;
+#include "dsa.h"
+#include "list.h"
 
 dsa_err_t sorting_bubble_sort(list_t *list, bool ascending);
 dsa_err_t sorting_inserting_sort(list_t *list, bool ascending);
 dsa_err_t sorting_selection_sort(list_t *list, bool ascendig);
+
+#ifdef __cplusplus
+}
+#endif
 #endif /* __SORTING_H__*/

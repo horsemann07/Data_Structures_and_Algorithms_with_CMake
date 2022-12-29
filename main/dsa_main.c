@@ -8,10 +8,17 @@
  *
  */
 
-
 #include "dsa_config.h"
 #include "list.h"
 #include "linkedlist.h"
+#include "graph.h"
+#include "tree.h"
+#include "queue.h"
+#include "stack.h"
+#include "sorting.h"
+#include "stringg.h"
+
+// #include "unity.h"
 // #if defined(LINKEDLIST)
 // #include "linkedlist.h"
 // #define listlist_main main
@@ -39,5 +46,23 @@
 int main()
 {
     printf("testing the dsa..\n");
+
+    dsa_err_t ret = DSA_OK;
+    list_t list;
+    if (list_create(&list, 10) != DSA_OK)
+    {
+        printf("failed to create list\n");
+    }
+    else
+    {
+        printf("list created.\n");
+    }
+
+    for (int i = 0; i < list.size; i++)
+    {
+        list.data[i] = rand() % 10;
+    }
+    list_display_data(&list);
+
     return 0;
 }

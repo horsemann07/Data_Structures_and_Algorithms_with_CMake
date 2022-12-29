@@ -20,7 +20,7 @@ extern "C" {
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
-
+#include <stdbool.h>
 /************************************
  * MACROS AND DEFINES
  ************************************/
@@ -31,8 +31,7 @@ extern "C" {
 
 #define DSA_CHECK_ARG(arg)                                                                         \
     {                                                                                              \
-        dsa_err_t __ = arg;                                                                        \
-        if (!(__))                                                                                 \
+        if (!(arg))                                                                                \
             return DSA_INVALID_ARG;                                                                \
     }
 

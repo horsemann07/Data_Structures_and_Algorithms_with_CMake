@@ -7,27 +7,26 @@
  */
 #include "sorting.h"
 
-//#include "list.h"
-///< No-temp-var swap operation
+/// No-temp-var swap operation
 #define SWAP(a, b) (((a) ^= (b)), ((b) ^= (a)), ((a) ^= (b)))
 
 dsa_err_t sorting_bubble_sort(list_t *list, bool ascending)
 {
-    DSA_CHECK_ARG(list && list->arr_base);
+    DSA_CHECK_ARG(list && list->data);
 
     for (int row = 0; row < list->size; row++)
     {
         for (int col = 0; col < (list->size - 1 - row); col++)
         {
             // descending order
-            if ((ascending == false) && (list->arr_base[col] < list->arr_base[col + 1]))
+            if ((ascending == false) && (list->data[col] < list->data[col + 1]))
             {
-                SWAP(list->arr_base[col], list->arr_base[col + 1]);
+                SWAP(list->data[col], list->data[col + 1]);
             }
             // ascending order
-            else if ((ascending == true) && (list->arr_base[col] > list->arr_base[col + 1]))
+            else if ((ascending == true) && (list->data[col] > list->data[col + 1]))
             {
-                SWAP(list->arr_base[col], list->arr_base[col + 1]);
+                SWAP(list->data[col], list->data[col + 1]);
             }
         }
     }
@@ -37,19 +36,19 @@ dsa_err_t sorting_bubble_sort(list_t *list, bool ascending)
 
 dsa_err_t sorting_inserting_sort(list_t *list, bool ascending)
 {
-    DSA_CHECK_ARG(list && list->arr_base);
+    DSA_CHECK_ARG(list && list->data);
 
     for (int row = 1; row < list->size; row++)
     {
-        int32_t removed_item = list->arr_base[row];
+        int32_t removed_item = list->data[row];
         int col = row - 1;
 
-        while ((col > -1) && (list->arr_base[col] > removed_item))
+        while ((col > -1) && (list->data[col] > removed_item))
         {
-            list->arr_base[col + 1] = list->arr_base[col];
+            list->data[col + 1] = list->data[col];
             col--;
         }
-        list->arr_base[col + 1] = removed_item;
+        list->data[col + 1] = removed_item;
     }
     return DSA_OK;
 }
@@ -60,7 +59,7 @@ dsa_err_t sorting_inserting_sort(list_t *list, bool ascending)
  */
 dsa_err_t sorting_selection_sort(list_t *list, bool ascendig)
 {
-    DSA_CHECK_ARG(list && list->arr_base);
+    DSA_CHECK_ARG(list && list->data);
 
     int row, col, index;
 
@@ -71,16 +70,16 @@ dsa_err_t sorting_selection_sort(list_t *list, bool ascendig)
         for (/* col = index = row*/; col < list->size; col++)
         {
             // descending
-            if (!(ascendig) && (list->arr_base[col] < list->arr_base[index]))
+            if (!(ascendig) && (list->data[col] < list->data[index]))
             {
                 index = col;
             }
             // ascending
-            else if ((ascendig) && (list->arr_base[col] > list->arr_base[index]))
+            else if ((ascendig) && (list->data[col] > list->data[index]))
             {
                 index = col;
             }
-            SWAP(list->arr_base[row], list->arr_base[index]);
+            SWAP(list->data[row], list->data[index]);
         }
     }
     return DSA_OK;

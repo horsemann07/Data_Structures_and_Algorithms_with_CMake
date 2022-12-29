@@ -7,15 +7,14 @@
  *
  *
  */
-#include "dsa_config.h"
-//
+
 #include "stack.h"
 
 dsa_err_t stack_init(stack_t *stack)
 {
     DSA_CHECK_ARG(stack);
 
-    stack->st_base = (uint32_t)calloc(stack->size, sizeof(int32_t));
+    stack->st_base = (int32_t *)calloc(stack->size, sizeof(int32_t));
     if (!(stack->st_base))
     {
         return DSA_NO_MEM;

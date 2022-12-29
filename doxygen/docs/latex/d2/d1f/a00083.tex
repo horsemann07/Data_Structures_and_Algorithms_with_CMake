@@ -1,0 +1,217 @@
+\hypertarget{a00083}{}\doxysection{unity\+\_\+fixture.\+h File Reference}
+\label{a00083}\index{unity\_fixture.h@{unity\_fixture.h}}
+{\ttfamily \#include \char`\"{}unity.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}unity\+\_\+fixture\+\_\+internals.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}unity\+\_\+memory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}unity\+\_\+internals.\+h\char`\"{}}\newline
+Include dependency graph for unity\+\_\+fixture.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{a00083_a02031df3be87951aa6aa3f92ac2f72b9}{T\+E\+S\+T\+\_\+\+G\+R\+O\+UP}}(group)~static const char$\ast$ T\+E\+S\+T\+\_\+\+G\+R\+O\+U\+P\+\_\+\#\#group = \#group
+\item 
+\#define \mbox{\hyperlink{a00083_a213d1795588db5f14467a3046bcf2dc7}{T\+E\+S\+T\+\_\+\+S\+E\+T\+UP}}(group)
+\item 
+\#define \mbox{\hyperlink{a00083_ad711f3c4f776e7cfdbc1db91a4ab13e7}{T\+E\+S\+T\+\_\+\+T\+E\+A\+R\+\_\+\+D\+O\+WN}}(group)
+\item 
+\#define \mbox{\hyperlink{a00083_a63862f8a42d6bee21007a3764e6c003c}{T\+E\+ST}}(group,  name)
+\item 
+\#define \mbox{\hyperlink{a00083_a97738beabc7ea4629b5e4ec529af6f35}{I\+G\+N\+O\+R\+E\+\_\+\+T\+E\+ST}}(group,  name)
+\item 
+\#define \mbox{\hyperlink{a00083_adc2b732a34781cebd1432e413f4ccfbc}{R\+U\+N\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE}}(group,  name)
+\item 
+\#define \mbox{\hyperlink{a00083_a4fb025e4925ae24f78f2c1260d706603}{T\+E\+S\+T\+\_\+\+G\+R\+O\+U\+P\+\_\+\+R\+U\+N\+N\+ER}}(group)
+\item 
+\#define \mbox{\hyperlink{a00083_a7fc679775ab3aaf4dd7302a0a4118202}{R\+U\+N\+\_\+\+T\+E\+S\+T\+\_\+\+G\+R\+O\+UP}}(group)
+\item 
+\#define \mbox{\hyperlink{a00083_a0003ececb011f12f7879197951045a03}{U\+T\+\_\+\+P\+T\+R\+\_\+\+S\+ET}}(ptr,  new\+Pointer\+Value)~\mbox{\hyperlink{a00086_ac29ad7cc4430309e0abfdfda6ad34635}{Unity\+Pointer\+\_\+\+Set}}((void$\ast$$\ast$)\&(ptr), (void$\ast$)(new\+Pointer\+Value), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+)
+\item 
+\#define \mbox{\hyperlink{a00083_a1a2c87adc40e6a7001318e8fe2de85ad}{T\+E\+S\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+P\+O\+I\+N\+T\+E\+R\+S\+\_\+\+E\+Q\+U\+AL}}(expected,  actual)~\mbox{\hyperlink{a00125_a765240c346d79b58ef22d81982aced18}{T\+E\+S\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+P\+TR}}((expected), (actual))
+\item 
+\#define \mbox{\hyperlink{a00083_af7e73d50de1639d4ea2c8e8af94e2704}{T\+E\+S\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+E\+Q\+U\+AL}}(expected,  actual)~\mbox{\hyperlink{a00125_a6d23ada42f10735d2e7abc0ecc757b4f}{T\+E\+S\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+H\+E\+X8}}(0xff \& (expected), 0xff \& (actual))
+\item 
+\#define \mbox{\hyperlink{a00083_a8afdb63dd7f053446aa1a5ce66e55651}{F\+A\+IL}}(\mbox{\hyperlink{a00233_a77d0ef0ac1ee6194337060d8afaeefb5}{message}})~\mbox{\hyperlink{a00125_a0482e12e17ae7cbfb8116ed6b1ed10ed}{T\+E\+S\+T\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+GE}}((\mbox{\hyperlink{a00233_a77d0ef0ac1ee6194337060d8afaeefb5}{message}}))
+\item 
+\#define \mbox{\hyperlink{a00083_a3e1cfef60e774a81f30eaddf26a3a274}{C\+H\+E\+CK}}(condition)~\mbox{\hyperlink{a00125_a6a0527f090dfc0b5ce9724415e51ebe5}{T\+E\+S\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+R\+UE}}((condition))
+\item 
+\#define \mbox{\hyperlink{a00083_a7921a0c4f152a7879e78fe6fc2905590}{L\+O\+N\+G\+S\+\_\+\+E\+Q\+U\+AL}}(expected,  actual)~\mbox{\hyperlink{a00125_af52a321a93c580a6213fef3e0f85c237}{T\+E\+S\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+I\+NT}}((expected), (actual))
+\item 
+\#define \mbox{\hyperlink{a00083_ade1dda09c948fee9ceb853bc6dd5f3cb}{S\+T\+R\+C\+M\+P\+\_\+\+E\+Q\+U\+AL}}(expected,  actual)~\mbox{\hyperlink{a00125_a1432f008fb6fb923371d4d0402571bf6}{T\+E\+S\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+S\+T\+R\+I\+NG}}((expected), (actual))
+\item 
+\#define \mbox{\hyperlink{a00083_a38ae20f3915215f63e66e49fa11a4617}{D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+AL}}(expected,  actual,  delta)~\mbox{\hyperlink{a00125_ab2392984572bbbab42898384470b8d06}{T\+E\+S\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+W\+I\+T\+H\+IN}}((delta), (expected), (actual))
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{a00083_a58ec279183697abbd5d3efea3442d4e5}{Unity\+Main}} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]}, void($\ast$run\+All\+Tests)(void))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{a00083_a3e1cfef60e774a81f30eaddf26a3a274}\label{a00083_a3e1cfef60e774a81f30eaddf26a3a274}} 
+\index{unity\_fixture.h@{unity\_fixture.h}!CHECK@{CHECK}}
+\index{CHECK@{CHECK}!unity\_fixture.h@{unity\_fixture.h}}
+\doxysubsubsection{\texorpdfstring{CHECK}{CHECK}}
+{\footnotesize\ttfamily \#define C\+H\+E\+CK(\begin{DoxyParamCaption}\item[{}]{condition }\end{DoxyParamCaption})~\mbox{\hyperlink{a00125_a6a0527f090dfc0b5ce9724415e51ebe5}{T\+E\+S\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+R\+UE}}((condition))}
+
+\mbox{\Hypertarget{a00083_a38ae20f3915215f63e66e49fa11a4617}\label{a00083_a38ae20f3915215f63e66e49fa11a4617}} 
+\index{unity\_fixture.h@{unity\_fixture.h}!DOUBLES\_EQUAL@{DOUBLES\_EQUAL}}
+\index{DOUBLES\_EQUAL@{DOUBLES\_EQUAL}!unity\_fixture.h@{unity\_fixture.h}}
+\doxysubsubsection{\texorpdfstring{DOUBLES\_EQUAL}{DOUBLES\_EQUAL}}
+{\footnotesize\ttfamily \#define D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+AL(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual,  }\item[{}]{delta }\end{DoxyParamCaption})~\mbox{\hyperlink{a00125_ab2392984572bbbab42898384470b8d06}{T\+E\+S\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+W\+I\+T\+H\+IN}}((delta), (expected), (actual))}
+
+\mbox{\Hypertarget{a00083_a8afdb63dd7f053446aa1a5ce66e55651}\label{a00083_a8afdb63dd7f053446aa1a5ce66e55651}} 
+\index{unity\_fixture.h@{unity\_fixture.h}!FAIL@{FAIL}}
+\index{FAIL@{FAIL}!unity\_fixture.h@{unity\_fixture.h}}
+\doxysubsubsection{\texorpdfstring{FAIL}{FAIL}}
+{\footnotesize\ttfamily \#define F\+A\+IL(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{a00233_a77d0ef0ac1ee6194337060d8afaeefb5}{message}} }\end{DoxyParamCaption})~\mbox{\hyperlink{a00125_a0482e12e17ae7cbfb8116ed6b1ed10ed}{T\+E\+S\+T\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+GE}}((\mbox{\hyperlink{a00233_a77d0ef0ac1ee6194337060d8afaeefb5}{message}}))}
+
+\mbox{\Hypertarget{a00083_a97738beabc7ea4629b5e4ec529af6f35}\label{a00083_a97738beabc7ea4629b5e4ec529af6f35}} 
+\index{unity\_fixture.h@{unity\_fixture.h}!IGNORE\_TEST@{IGNORE\_TEST}}
+\index{IGNORE\_TEST@{IGNORE\_TEST}!unity\_fixture.h@{unity\_fixture.h}}
+\doxysubsubsection{\texorpdfstring{IGNORE\_TEST}{IGNORE\_TEST}}
+{\footnotesize\ttfamily \#define I\+G\+N\+O\+R\+E\+\_\+\+T\+E\+ST(\begin{DoxyParamCaption}\item[{}]{group,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} TEST\_\#\#group\#\#\_\#\#name\#\#\_(\textcolor{keywordtype}{void});\(\backslash\)}
+\DoxyCodeLine{    void TEST\_\#\#group\#\#\_\#\#name\#\#\_run(\textcolor{keywordtype}{void});\(\backslash\)}
+\DoxyCodeLine{    void TEST\_\#\#group\#\#\_\#\#name\#\#\_run(\textcolor{keywordtype}{void})\(\backslash\)}
+\DoxyCodeLine{    \{\(\backslash\)}
+\DoxyCodeLine{        UnityIgnoreTest(\textcolor{stringliteral}{"IGNORE\_TEST("} \#group \textcolor{stringliteral}{", "} \#name \textcolor{stringliteral}{")"}, TEST\_GROUP\_\#\#group, \#name);\(\backslash\)}
+\DoxyCodeLine{    \}\(\backslash\)}
+\DoxyCodeLine{    void TEST\_\#\#group\#\#\_\#\#name\#\#\_(\textcolor{keywordtype}{void})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{a00083_a7921a0c4f152a7879e78fe6fc2905590}\label{a00083_a7921a0c4f152a7879e78fe6fc2905590}} 
+\index{unity\_fixture.h@{unity\_fixture.h}!LONGS\_EQUAL@{LONGS\_EQUAL}}
+\index{LONGS\_EQUAL@{LONGS\_EQUAL}!unity\_fixture.h@{unity\_fixture.h}}
+\doxysubsubsection{\texorpdfstring{LONGS\_EQUAL}{LONGS\_EQUAL}}
+{\footnotesize\ttfamily \#define L\+O\+N\+G\+S\+\_\+\+E\+Q\+U\+AL(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\mbox{\hyperlink{a00125_af52a321a93c580a6213fef3e0f85c237}{T\+E\+S\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+I\+NT}}((expected), (actual))}
+
+\mbox{\Hypertarget{a00083_adc2b732a34781cebd1432e413f4ccfbc}\label{a00083_adc2b732a34781cebd1432e413f4ccfbc}} 
+\index{unity\_fixture.h@{unity\_fixture.h}!RUN\_TEST\_CASE@{RUN\_TEST\_CASE}}
+\index{RUN\_TEST\_CASE@{RUN\_TEST\_CASE}!unity\_fixture.h@{unity\_fixture.h}}
+\doxysubsubsection{\texorpdfstring{RUN\_TEST\_CASE}{RUN\_TEST\_CASE}}
+{\footnotesize\ttfamily \#define R\+U\+N\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE(\begin{DoxyParamCaption}\item[{}]{group,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \{ \textcolor{keywordtype}{void} TEST\_\#\#group\#\#\_\#\#name\#\#\_run(\textcolor{keywordtype}{void});\(\backslash\)}
+\DoxyCodeLine{      TEST\_\#\#group\#\#\_\#\#name\#\#\_run(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{a00083_a7fc679775ab3aaf4dd7302a0a4118202}\label{a00083_a7fc679775ab3aaf4dd7302a0a4118202}} 
+\index{unity\_fixture.h@{unity\_fixture.h}!RUN\_TEST\_GROUP@{RUN\_TEST\_GROUP}}
+\index{RUN\_TEST\_GROUP@{RUN\_TEST\_GROUP}!unity\_fixture.h@{unity\_fixture.h}}
+\doxysubsubsection{\texorpdfstring{RUN\_TEST\_GROUP}{RUN\_TEST\_GROUP}}
+{\footnotesize\ttfamily \#define R\+U\+N\+\_\+\+T\+E\+S\+T\+\_\+\+G\+R\+O\+UP(\begin{DoxyParamCaption}\item[{}]{group }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \{ \textcolor{keywordtype}{void} TEST\_\#\#group\#\#\_GROUP\_RUNNER(\textcolor{keywordtype}{void});\(\backslash\)}
+\DoxyCodeLine{      TEST\_\#\#group\#\#\_GROUP\_RUNNER(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{a00083_ade1dda09c948fee9ceb853bc6dd5f3cb}\label{a00083_ade1dda09c948fee9ceb853bc6dd5f3cb}} 
+\index{unity\_fixture.h@{unity\_fixture.h}!STRCMP\_EQUAL@{STRCMP\_EQUAL}}
+\index{STRCMP\_EQUAL@{STRCMP\_EQUAL}!unity\_fixture.h@{unity\_fixture.h}}
+\doxysubsubsection{\texorpdfstring{STRCMP\_EQUAL}{STRCMP\_EQUAL}}
+{\footnotesize\ttfamily \#define S\+T\+R\+C\+M\+P\+\_\+\+E\+Q\+U\+AL(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\mbox{\hyperlink{a00125_a1432f008fb6fb923371d4d0402571bf6}{T\+E\+S\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+S\+T\+R\+I\+NG}}((expected), (actual))}
+
+\mbox{\Hypertarget{a00083_a63862f8a42d6bee21007a3764e6c003c}\label{a00083_a63862f8a42d6bee21007a3764e6c003c}} 
+\index{unity\_fixture.h@{unity\_fixture.h}!TEST@{TEST}}
+\index{TEST@{TEST}!unity\_fixture.h@{unity\_fixture.h}}
+\doxysubsubsection{\texorpdfstring{TEST}{TEST}}
+{\footnotesize\ttfamily \#define T\+E\+ST(\begin{DoxyParamCaption}\item[{}]{group,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} TEST\_\#\#group\#\#\_\#\#name\#\#\_(\textcolor{keywordtype}{void});\(\backslash\)}
+\DoxyCodeLine{    void TEST\_\#\#group\#\#\_\#\#name\#\#\_run(\textcolor{keywordtype}{void});\(\backslash\)}
+\DoxyCodeLine{    void TEST\_\#\#group\#\#\_\#\#name\#\#\_run(\textcolor{keywordtype}{void})\(\backslash\)}
+\DoxyCodeLine{    \{\(\backslash\)}
+\DoxyCodeLine{        UnityTestRunner(TEST\_\#\#group\#\#\_SETUP,\(\backslash\)}
+\DoxyCodeLine{            TEST\_\#\#group\#\#\_\#\#name\#\#\_,\(\backslash\)}
+\DoxyCodeLine{            TEST\_\#\#group\#\#\_TEAR\_DOWN,\(\backslash\)}
+\DoxyCodeLine{            \textcolor{stringliteral}{"TEST("} \#group \textcolor{stringliteral}{", "} \#name \textcolor{stringliteral}{")"},\(\backslash\)}
+\DoxyCodeLine{            TEST\_GROUP\_\#\#group, \#name,\(\backslash\)}
+\DoxyCodeLine{            \_\_FILE\_\_, \_\_LINE\_\_);\(\backslash\)}
+\DoxyCodeLine{    \}\(\backslash\)}
+\DoxyCodeLine{    void  TEST\_\#\#group\#\#\_\#\#name\#\#\_(\textcolor{keywordtype}{void})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{a00083_af7e73d50de1639d4ea2c8e8af94e2704}\label{a00083_af7e73d50de1639d4ea2c8e8af94e2704}} 
+\index{unity\_fixture.h@{unity\_fixture.h}!TEST\_ASSERT\_BYTES\_EQUAL@{TEST\_ASSERT\_BYTES\_EQUAL}}
+\index{TEST\_ASSERT\_BYTES\_EQUAL@{TEST\_ASSERT\_BYTES\_EQUAL}!unity\_fixture.h@{unity\_fixture.h}}
+\doxysubsubsection{\texorpdfstring{TEST\_ASSERT\_BYTES\_EQUAL}{TEST\_ASSERT\_BYTES\_EQUAL}}
+{\footnotesize\ttfamily \#define T\+E\+S\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+E\+Q\+U\+AL(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\mbox{\hyperlink{a00125_a6d23ada42f10735d2e7abc0ecc757b4f}{T\+E\+S\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+H\+E\+X8}}(0xff \& (expected), 0xff \& (actual))}
+
+\mbox{\Hypertarget{a00083_a1a2c87adc40e6a7001318e8fe2de85ad}\label{a00083_a1a2c87adc40e6a7001318e8fe2de85ad}} 
+\index{unity\_fixture.h@{unity\_fixture.h}!TEST\_ASSERT\_POINTERS\_EQUAL@{TEST\_ASSERT\_POINTERS\_EQUAL}}
+\index{TEST\_ASSERT\_POINTERS\_EQUAL@{TEST\_ASSERT\_POINTERS\_EQUAL}!unity\_fixture.h@{unity\_fixture.h}}
+\doxysubsubsection{\texorpdfstring{TEST\_ASSERT\_POINTERS\_EQUAL}{TEST\_ASSERT\_POINTERS\_EQUAL}}
+{\footnotesize\ttfamily \#define T\+E\+S\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+P\+O\+I\+N\+T\+E\+R\+S\+\_\+\+E\+Q\+U\+AL(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\mbox{\hyperlink{a00125_a765240c346d79b58ef22d81982aced18}{T\+E\+S\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+P\+TR}}((expected), (actual))}
+
+\mbox{\Hypertarget{a00083_a02031df3be87951aa6aa3f92ac2f72b9}\label{a00083_a02031df3be87951aa6aa3f92ac2f72b9}} 
+\index{unity\_fixture.h@{unity\_fixture.h}!TEST\_GROUP@{TEST\_GROUP}}
+\index{TEST\_GROUP@{TEST\_GROUP}!unity\_fixture.h@{unity\_fixture.h}}
+\doxysubsubsection{\texorpdfstring{TEST\_GROUP}{TEST\_GROUP}}
+{\footnotesize\ttfamily \#define T\+E\+S\+T\+\_\+\+G\+R\+O\+UP(\begin{DoxyParamCaption}\item[{}]{group }\end{DoxyParamCaption})~static const char$\ast$ T\+E\+S\+T\+\_\+\+G\+R\+O\+U\+P\+\_\+\#\#group = \#group}
+
+\mbox{\Hypertarget{a00083_a4fb025e4925ae24f78f2c1260d706603}\label{a00083_a4fb025e4925ae24f78f2c1260d706603}} 
+\index{unity\_fixture.h@{unity\_fixture.h}!TEST\_GROUP\_RUNNER@{TEST\_GROUP\_RUNNER}}
+\index{TEST\_GROUP\_RUNNER@{TEST\_GROUP\_RUNNER}!unity\_fixture.h@{unity\_fixture.h}}
+\doxysubsubsection{\texorpdfstring{TEST\_GROUP\_RUNNER}{TEST\_GROUP\_RUNNER}}
+{\footnotesize\ttfamily \#define T\+E\+S\+T\+\_\+\+G\+R\+O\+U\+P\+\_\+\+R\+U\+N\+N\+ER(\begin{DoxyParamCaption}\item[{}]{group }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} TEST\_\#\#group\#\#\_GROUP\_RUNNER(\textcolor{keywordtype}{void});\(\backslash\)}
+\DoxyCodeLine{    void TEST\_\#\#group\#\#\_GROUP\_RUNNER(\textcolor{keywordtype}{void})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{a00083_a213d1795588db5f14467a3046bcf2dc7}\label{a00083_a213d1795588db5f14467a3046bcf2dc7}} 
+\index{unity\_fixture.h@{unity\_fixture.h}!TEST\_SETUP@{TEST\_SETUP}}
+\index{TEST\_SETUP@{TEST\_SETUP}!unity\_fixture.h@{unity\_fixture.h}}
+\doxysubsubsection{\texorpdfstring{TEST\_SETUP}{TEST\_SETUP}}
+{\footnotesize\ttfamily \#define T\+E\+S\+T\+\_\+\+S\+E\+T\+UP(\begin{DoxyParamCaption}\item[{}]{group }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} TEST\_\#\#group\#\#\_SETUP(\textcolor{keywordtype}{void});\(\backslash\)}
+\DoxyCodeLine{    void TEST\_\#\#group\#\#\_SETUP(\textcolor{keywordtype}{void})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{a00083_ad711f3c4f776e7cfdbc1db91a4ab13e7}\label{a00083_ad711f3c4f776e7cfdbc1db91a4ab13e7}} 
+\index{unity\_fixture.h@{unity\_fixture.h}!TEST\_TEAR\_DOWN@{TEST\_TEAR\_DOWN}}
+\index{TEST\_TEAR\_DOWN@{TEST\_TEAR\_DOWN}!unity\_fixture.h@{unity\_fixture.h}}
+\doxysubsubsection{\texorpdfstring{TEST\_TEAR\_DOWN}{TEST\_TEAR\_DOWN}}
+{\footnotesize\ttfamily \#define T\+E\+S\+T\+\_\+\+T\+E\+A\+R\+\_\+\+D\+O\+WN(\begin{DoxyParamCaption}\item[{}]{group }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} TEST\_\#\#group\#\#\_TEAR\_DOWN(\textcolor{keywordtype}{void});\(\backslash\)}
+\DoxyCodeLine{    void TEST\_\#\#group\#\#\_TEAR\_DOWN(\textcolor{keywordtype}{void})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{a00083_a0003ececb011f12f7879197951045a03}\label{a00083_a0003ececb011f12f7879197951045a03}} 
+\index{unity\_fixture.h@{unity\_fixture.h}!UT\_PTR\_SET@{UT\_PTR\_SET}}
+\index{UT\_PTR\_SET@{UT\_PTR\_SET}!unity\_fixture.h@{unity\_fixture.h}}
+\doxysubsubsection{\texorpdfstring{UT\_PTR\_SET}{UT\_PTR\_SET}}
+{\footnotesize\ttfamily \#define U\+T\+\_\+\+P\+T\+R\+\_\+\+S\+ET(\begin{DoxyParamCaption}\item[{}]{ptr,  }\item[{}]{new\+Pointer\+Value }\end{DoxyParamCaption})~\mbox{\hyperlink{a00086_ac29ad7cc4430309e0abfdfda6ad34635}{Unity\+Pointer\+\_\+\+Set}}((void$\ast$$\ast$)\&(ptr), (void$\ast$)(new\+Pointer\+Value), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+)}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{a00083_a58ec279183697abbd5d3efea3442d4e5}\label{a00083_a58ec279183697abbd5d3efea3442d4e5}} 
+\index{unity\_fixture.h@{unity\_fixture.h}!UnityMain@{UnityMain}}
+\index{UnityMain@{UnityMain}!unity\_fixture.h@{unity\_fixture.h}}
+\doxysubsubsection{\texorpdfstring{UnityMain()}{UnityMain()}}
+{\footnotesize\ttfamily int Unity\+Main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]},  }\item[{void($\ast$)(void)}]{run\+All\+Tests }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+% FIG 2

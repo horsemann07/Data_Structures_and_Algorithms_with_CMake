@@ -1,0 +1,8 @@
+digraph "sorting" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_bb1b521853a9c46347182a9d10420771 [shape=box, label="sorting", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_bb1b521853a9c46347182a9d10420771.html"];
+  dir_9f351d46ce3cc29445a41dc3a31e6919 [shape=box label="config" URL="dir_9f351d46ce3cc29445a41dc3a31e6919.html"];
+  dir_bb1b521853a9c46347182a9d10420771->dir_9f351d46ce3cc29445a41dc3a31e6919 [headlabel="1", labeldistance=1.5 headhref="dir_000023_000019.html"];
+}

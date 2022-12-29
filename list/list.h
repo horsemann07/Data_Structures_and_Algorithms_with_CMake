@@ -17,8 +17,7 @@ extern "C" {
 /************************************
  * INCLUDES
  ************************************/
-#include <dsa.h>
-
+#include "dsa.h"
 /************************************
  * MACROS AND DEFINES
  ************************************/
@@ -52,9 +51,9 @@ dsa_err_t list_delete_index(list_t *list, int index);
 
 dsa_err_t list_search_data(list_t *list, int key);
 
-dsa_err_t list_get(list_t *list, int index);
+dsa_err_t list_get(list_t *list, int index, int *value);
 
-dsa_err_t list_set(list_t *list, int index);
+dsa_err_t list_set(list_t *list, int index, int value);
 
 dsa_err_t list_get_max(list_t *list, uint32_t *max);
 

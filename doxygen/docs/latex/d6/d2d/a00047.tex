@@ -1,0 +1,70 @@
+\hypertarget{a00047}{}\doxysection{sorting.\+c File Reference}
+\label{a00047}\index{sorting.c@{sorting.c}}
+{\ttfamily \#include \char`\"{}sorting.\+h\char`\"{}}\newline
+Include dependency graph for sorting.\+c\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{a00047_aac9153aee4bdb92701df902e06a74eb3}{S\+W\+AP}}(a,  b)~(((a) $^\wedge$= (b)), ((b) $^\wedge$= (a)), ((a) $^\wedge$= (b)))
+\begin{DoxyCompactList}\small\item\em $<$ No-\/temp-\/var swap operation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00017_aea7049054a704b9b6ed56ea32d4b9de2}{dsa\+\_\+err\+\_\+t}} \mbox{\hyperlink{a00047_a2e2690063122152d53ccd7988366df5a}{sorting\+\_\+bubble\+\_\+sort}} (\mbox{\hyperlink{a00138}{list\+\_\+t}} $\ast$list, bool ascending)
+\item 
+\mbox{\hyperlink{a00017_aea7049054a704b9b6ed56ea32d4b9de2}{dsa\+\_\+err\+\_\+t}} \mbox{\hyperlink{a00047_aba6134fe51d5db62483f924ec9c45297}{sorting\+\_\+inserting\+\_\+sort}} (\mbox{\hyperlink{a00138}{list\+\_\+t}} $\ast$list, bool ascending)
+\item 
+\mbox{\hyperlink{a00017_aea7049054a704b9b6ed56ea32d4b9de2}{dsa\+\_\+err\+\_\+t}} \mbox{\hyperlink{a00047_a1aadb6da86aea33469c8d083c1365bab}{sorting\+\_\+selection\+\_\+sort}} (\mbox{\hyperlink{a00138}{list\+\_\+t}} $\ast$list, bool ascendig)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+horsemann07 (\href{mailto:raghavjha1531@gmail.com}{\texttt{ raghavjha1531@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+09-\/11-\/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{a00047_aac9153aee4bdb92701df902e06a74eb3}\label{a00047_aac9153aee4bdb92701df902e06a74eb3}} 
+\index{sorting.c@{sorting.c}!SWAP@{SWAP}}
+\index{SWAP@{SWAP}!sorting.c@{sorting.c}}
+\doxysubsubsection{\texorpdfstring{SWAP}{SWAP}}
+{\footnotesize\ttfamily \#define S\+W\+AP(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~(((a) $^\wedge$= (b)), ((b) $^\wedge$= (a)), ((a) $^\wedge$= (b)))}
+
+
+
+$<$ No-\/temp-\/var swap operation 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{a00047_a2e2690063122152d53ccd7988366df5a}\label{a00047_a2e2690063122152d53ccd7988366df5a}} 
+\index{sorting.c@{sorting.c}!sorting\_bubble\_sort@{sorting\_bubble\_sort}}
+\index{sorting\_bubble\_sort@{sorting\_bubble\_sort}!sorting.c@{sorting.c}}
+\doxysubsubsection{\texorpdfstring{sorting\_bubble\_sort()}{sorting\_bubble\_sort()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00017_aea7049054a704b9b6ed56ea32d4b9de2}{dsa\+\_\+err\+\_\+t}} sorting\+\_\+bubble\+\_\+sort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00138}{list\+\_\+t}} $\ast$}]{list,  }\item[{bool}]{ascending }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00047_aba6134fe51d5db62483f924ec9c45297}\label{a00047_aba6134fe51d5db62483f924ec9c45297}} 
+\index{sorting.c@{sorting.c}!sorting\_inserting\_sort@{sorting\_inserting\_sort}}
+\index{sorting\_inserting\_sort@{sorting\_inserting\_sort}!sorting.c@{sorting.c}}
+\doxysubsubsection{\texorpdfstring{sorting\_inserting\_sort()}{sorting\_inserting\_sort()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00017_aea7049054a704b9b6ed56ea32d4b9de2}{dsa\+\_\+err\+\_\+t}} sorting\+\_\+inserting\+\_\+sort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00138}{list\+\_\+t}} $\ast$}]{list,  }\item[{bool}]{ascending }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00047_a1aadb6da86aea33469c8d083c1365bab}\label{a00047_a1aadb6da86aea33469c8d083c1365bab}} 
+\index{sorting.c@{sorting.c}!sorting\_selection\_sort@{sorting\_selection\_sort}}
+\index{sorting\_selection\_sort@{sorting\_selection\_sort}!sorting.c@{sorting.c}}
+\doxysubsubsection{\texorpdfstring{sorting\_selection\_sort()}{sorting\_selection\_sort()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00017_aea7049054a704b9b6ed56ea32d4b9de2}{dsa\+\_\+err\+\_\+t}} sorting\+\_\+selection\+\_\+sort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00138}{list\+\_\+t}} $\ast$}]{list,  }\item[{bool}]{ascendig }\end{DoxyParamCaption})}
+
+
+\begin{DoxyItemize}
+\item Select the index and check for min value in array.
+\item If found, then, swap min value with index value. 
+\end{DoxyItemize}

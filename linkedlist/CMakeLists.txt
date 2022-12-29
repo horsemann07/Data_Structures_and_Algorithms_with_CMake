@@ -5,8 +5,9 @@ set(linkedlist_src
 set(linkedlist_incs
     "./")
 
-add_library(linkedlist STATIC 
+add_library(${linkedlist_lib} STATIC 
     ${linkedlist_src})
 
-target_include_directories(linkedlist PUBLIC 
+target_include_directories(${linkedlist_lib} PUBLIC 
+    ${dsa_config}  
     ${linkedlist_incs})

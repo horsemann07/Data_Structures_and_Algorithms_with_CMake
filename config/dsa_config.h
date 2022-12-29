@@ -1,5 +1,5 @@
-#ifndef __DSA_CONFIG__
-#define __DSA_CONFIG__
+#ifndef __dsa_config__
+#define __dsa_config__
 
 #include <stdint.h>
 #include <stdio.h>
@@ -12,4 +12,4 @@ extern "C" {
 #ifdef __cplusplus
 }
 #endif
-#endif /* __DSA_CONFIG__ */
+#endif /* __dsa_config__ */
