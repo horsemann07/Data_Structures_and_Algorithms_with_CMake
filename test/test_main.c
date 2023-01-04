@@ -1,11 +1,21 @@
 
-#define CATCH_CONFIG_MAIN
-#include <catch2/catch_test_macros.hpp>
-#include "dsa.h"
-#include "list.h"
-#
 
-TEST_CASE("Testing NULL input in list", "[single-file]")
+#include "list_ut.h"
+#include "unity.h"
+
+void setUp(void)
 {
-    REQUIRE(list_create(NULL, 10) == DSA_INVALID_ARG)
+}
+void tearDown(void)
+{
+}
+
+int main(void)
+{
+    UNITY_BEGIN();
+
+    RUN_TEST(test_ListAPI);
+    RUN_TEST(test_CreateList);
+
+    return UNITY_END();
 }

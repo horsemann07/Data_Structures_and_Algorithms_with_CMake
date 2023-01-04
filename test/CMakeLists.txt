@@ -1,11 +1,18 @@
+
 set(test_main "unit_tests")
-set(test_src "test_main.c")
-set(test_incs "./")
+set(test_utsrc 
+    "test_main.c"
+    "list_ut.c")
+set(test_utincs "./include/")
 
+add_executable(${test_main} ${test_utsrc})
 
-add_executable(${test_main} ${test_src})
-target_include_directories(${test_main} PUBLIC ${test_incs})
-target_link_libraries(${test_main} PIBLIC 
+target_include_directories(${test_main} PUBLIC 
+    ${test_utincs})
+
+target_link_libraries(${test_main} PUBLIC 
     ${list_lib}
-    unity::unity 
-    Catch2::Catch2 ) 
+    ${list_utest}
+    unity) 
+
+add_test(list_test ${test_main})

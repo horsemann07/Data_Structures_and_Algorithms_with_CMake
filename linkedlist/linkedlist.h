@@ -22,6 +22,12 @@ extern "C" {
 /************************************
  * TYPEDEFS
  ************************************/
+// typedef struct s_linkedlist linkedlist_t;
+typedef struct
+{
+    int data;
+    linkedlist_t *nlink;
+} linkedlist_t;
 
 /************************************
  * EXPORTED VARIABLES
@@ -34,4 +40,3 @@ extern "C" {
 #ifdef __cplusplus
 }
 #endif
-

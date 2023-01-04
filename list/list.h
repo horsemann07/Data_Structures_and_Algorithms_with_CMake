@@ -62,9 +62,9 @@ dsa_err_t list_get_min(list_t *list, uint32_t *min);
 
 dsa_err_t list_reverse(list_t *list);
 
-dsa_err_t list_shift(list_t *list, list_t *shifted_list, bool left_shift);
+dsa_err_t list_shift(list_t *list, uint32_t rotate, bool left_shift);
 
-dsa_err_t list_rotate(list_t *list, list_t *rotated_list, bool *left_rotation);
+dsa_err_t list_rotate(list_t *list, uint32_t rotate, bool left_rotation);
 
 #ifdef __cplusplus
 }

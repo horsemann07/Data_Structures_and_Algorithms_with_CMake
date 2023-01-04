@@ -51,9 +51,10 @@ dsa_err_t binary_search(list_t *list, int key, uint32_t *index)
 
 dsa_err_t list_create(list_t *list, int size)
 {
-    DSA_CHECK_ARG(list);
+    DSA_CHECK_ARG(list && size > 0);
     list->data = (int *)calloc(size, sizeof(int));
     list->size = size;
+    list->cindex = 0;
     return DSA_OK;
 }
 
@@ -157,6 +158,75 @@ dsa_err_t list_reverse(list_t *list)
         SWAP((list->data[start]), (list->data[end]));
         start++;
         end--;
+    }
+    return DSA_OK;
+}
+
+dsa_err_t list_shift(list_t *list, uint32_t rotate, bool left_shift)
+{
+    DSA_CHECK_ARG(list);
+    int sstart; // shift start index
+    if (left_shift)
+    {
+        int start = 0;
+        sstart = rotate;
+        for (start = 0; sstart < list->size; start++)
+        {
+            list->data[start] = list->data[sstart++];
+        }
+        for (; start < list->size; start++)
+        {
+            list->data[start] = 0;
+        }
+    }
+    else
+    {
+        int end;
+        sstart = end - rotate;
+        for (end = (list->cindex); sstart >= 0; end--)
+        {
+            list->data[end] = list->data[sstart--];
+        }
+        for (; end >= 0; end--)
+        {
+            list->data[end] = 0;
+        }
+    }
+    return DSA_OK;
+}
+
+dsa_err_t list_rotate(list_t *list, uint32_t rotate, bool left_rotation)
+{
+    DSA_CHECK_ARG(list);
+    int rstart;
+    int end;
+    int start = 0;
+    if (left_rotation)
+    {
+        rstart = 0;
+        while (rstart < rotate)
+        {
+            int temp = list->data[0];
+            for (start = 1; start < list->cindex - 1; start++)
+            {
+                list->data[start] = list->data[start + 1];
+            }
+            list->data[list->cindex] = temp;
+            rstart++;
+        }
+    }
+    else
+    {
+        while (rstart < rotate)
+        {
+            int temp = list->data[list->cindex];
+            for (end = list->cindex - 1; end > 0; end--)
+            {
+                list->data[end] = list->data[end - 1];
+            }
+            list->data[0] = temp;
+            rstart++;
+        }
     }
     return DSA_OK;
 }
