@@ -17,21 +17,6 @@ set(sorting_lib "sorting")
 set(tree_lib "tree")
 set(graph_lib "graph")
 set(dsa_main "dsa_main")
-# set(test_main "test")
-# include(FetchContent)
-# FetchContent_Declare(
-#     unity
-#     GIT_REPOSITORY https://github.com/ThrowTheSwitch/Unity
-#     GIT_TAG v2.5.2
-#     GIT_SHALLOW FALSE)
-# FetchContent_MakeAvailable(unity)
-
-# FetchContent_Declare(
-#     Catch2
-#     GIT_REPOSITORY https://github.com/catchorg/Catch2
-#     GIT_TAG v2.13.9
-#     GIT_SHALLOW TRUE)
-# FetchContent_MakeAvailable(Catch2)
 
 # include directory of library.
 add_subdirectory(graph)
@@ -43,20 +28,19 @@ add_subdirectory(stringg)
 add_subdirectory(sorting)
 add_subdirectory(tree)
 
-
-option(ENABLE_TESTING "Enable the testing" ON)
+option(ENABLE_TESTING "Enable the testing" OFF)
 option(USE_CATCH2_LIB "Using Catch2 lib" OFF)
 if(ENABLE_TESTING)
     include(CTest)
     add_subdirectory(testing_lib)
     add_subdirectory(test)
-    set(CMAKE_C_OUTPUT_EXTENSION_REPLACE 1)
-    add_definitions(-fprofile-arcs -ftest-coverage)
-    link_libraries(gcov)
-    set(CMAKE_EXE_LINKER_FLAGS ${CMAKE_EXE_LINKER_FLAGS} --coverage)
+    # set(CMAKE_C_OUTPUT_EXTENSION_REPLACE 1)
+    # add_definitions(-fprofile-arcs -ftest-coverage)
+    # link_libraries(gcov)
+    # set(CMAKE_EXE_LINKER_FLAGS ${CMAKE_EXE_LINKER_FLAGS} --coverage)
 
-    add_custom_target(cov gcov ${CMAKE_CURRENT_SOURCE_DIR}/test/test_main.c --object-directory 
-    ${CMAKE_CURRENT_BINARY_DIR}/test/CMakeFiles/unit_tests.dir WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
+    # add_custom_target(cov gcov ${CMAKE_CURRENT_SOURCE_DIR}/test/test_main.c --object-directory 
+    # ${CMAKE_CURRENT_BINARY_DIR}/test/CMakeFiles/unit_tests.dir WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
     
 else()
     add_subdirectory(main)

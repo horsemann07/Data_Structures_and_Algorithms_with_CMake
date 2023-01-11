@@ -1,0 +1,67 @@
+[
+{
+  "directory": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../graph/.  -g   -o graph/CMakeFiles/graph.dir/graph.c.o   -c /home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/graph/graph.c",
+  "file": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/graph/graph.c"
+},
+
+{
+  "directory": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../linkedlist/.  -g   -o linkedlist/CMakeFiles/linkedlist.dir/linkedlist.c.o   -c /home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/linkedlist/linkedlist.c",
+  "file": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/linkedlist/linkedlist.c"
+},
+
+{
+  "directory": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../list/.  -g   -o list/CMakeFiles/list.dir/list.c.o   -c /home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/list/list.c",
+  "file": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/list/list.c"
+},
+
+{
+  "directory": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../queue/.  -g   -o queue/CMakeFiles/queue.dir/queue.c.o   -c /home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/queue/queue.c",
+  "file": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/queue/queue.c"
+},
+
+{
+  "directory": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../stack/.  -g   -o stack/CMakeFiles/stack.dir/stack.c.o   -c /home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/stack/stack.c",
+  "file": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/stack/stack.c"
+},
+
+{
+  "directory": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../stringg/.  -g   -o stringg/CMakeFiles/stringg.dir/stringg.c.o   -c /home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/stringg/stringg.c",
+  "file": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/stringg/stringg.c"
+},
+
+{
+  "directory": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../sorting/. -I../list/.  -g   -o sorting/CMakeFiles/sorting.dir/sorting.c.o   -c /home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/sorting/sorting.c",
+  "file": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/sorting/sorting.c"
+},
+
+{
+  "directory": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../tree/.  -g   -o tree/CMakeFiles/tree.dir/tree.c.o   -c /home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/tree/tree.c",
+  "file": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/tree/tree.c"
+},
+
+{
+  "directory": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../testing_lib/unity/src -Itesting_lib/unity  -g   -Waddress -Waggregate-return -Wformat-nonliteral -Wformat-security -Wformat -Winit-self -Wmissing-declarations -Wmissing-include-dirs -Wno-multichar -Wno-parentheses -Wno-type-limits -Wno-unused-parameter -Wunreachable-code -Wwrite-strings -Wpointer-arith -Werror -Wall -std=c11 -o testing_lib/unity/CMakeFiles/unity.dir/src/unity.c.o   -c /home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/testing_lib/unity/src/unity.c",
+  "file": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/testing_lib/unity/src/unity.c"
+},
+
+{
+  "directory": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../test/./include -I../list/. -I../testing_lib/unity/src -Itesting_lib/unity  -g   -o test/CMakeFiles/unit_tests.dir/test_main.c.o   -c /home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/test/test_main.c",
+  "file": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/test/test_main.c"
+},
+
+{
+  "directory": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../test/./include -I../list/. -I../testing_lib/unity/src -Itesting_lib/unity  -g   -o test/CMakeFiles/unit_tests.dir/list_ut.c.o   -c /home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/test/list_ut.c",
+  "file": "/home/horsemann/Desktop/WorkSpace/Personal/data_structure_in_c/test/list_ut.c"
+}
+]
