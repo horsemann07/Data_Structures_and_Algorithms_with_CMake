@@ -9,9 +9,41 @@ extern "C" {
 #include "dsa.h"
 #include "list.h"
 
+/**
+ * @brief
+ *
+ * @param list
+ * @param ascending
+ * @return dsa_err_t
+ */
 dsa_err_t sorting_bubble_sort(list_t *list, bool ascending);
+
+/**
+ * @brief
+ *
+ * @param list
+ * @param ascending
+ * @return dsa_err_t
+ */
 dsa_err_t sorting_inserting_sort(list_t *list, bool ascending);
-dsa_err_t sorting_selection_sort(list_t *list, bool ascendig);
+
+/**
+ * @brief
+ *
+ * @param list
+ * @param ascending
+ * @return dsa_err_t
+ */
+dsa_err_t sorting_selection_sort(list_t *list, bool ascending);
+
+/**
+ * @brief
+ *
+ * @param list
+ * @param ascending
+ * @return dsa_err_t
+ */
+dsa_err_t sorting_quick_sort(list_t *list, bool ascending);
 
 #ifdef __cplusplus
 }

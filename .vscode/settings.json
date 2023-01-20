@@ -1,3 +1,8 @@
 {
-    "cmake.sourceDirectory": "${workspaceFolder}/."
+    "cmake.sourceDirectory": "${workspaceFolder}/.",
+    "files.associations": {
+        "cmath": "c",
+        "string.h": "c",
+        "stack_ut.h": "c"
+    }
 }

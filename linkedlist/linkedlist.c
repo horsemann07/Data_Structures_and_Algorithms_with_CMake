@@ -9,7 +9,7 @@
 #include "dsa.h"
 #include "linkedlist.h"
 
-dsa_err_t slinkedlist_create_node(slinkedlist_t *llist, int key)
+dsa_err_t slinkedlist_create(slinkedlist_t *llist, int key)
 {
     DSA_CHECK_ARG(llist);
 
@@ -29,10 +29,11 @@ dsa_err_t slinkedlist_display_data(slinkedlist_t *head)
 
     while (current != NULL)
     {
-        printf("%d \n", current->data);
+        printf("%d->", current->data);
 
         current = current->nlink;
     }
+    printf("\n");
 
     return DSA_OK;
 }
@@ -67,7 +68,7 @@ dsa_err_t slinkedlist_insert(slinkedlist_t *head, int key)
 
         current = current->nlink;
     }
-    return (slinkedlist_create(&(current->nlink), key));
+    return (slinkedlist_create(current->nlink, key));
 }
 
 /*
@@ -88,7 +89,7 @@ dsa_err_t slinkedlist_insert_at_pos(slinkedlist_t *head, uint32_t pos, int key)
         current = current->nlink;
     }
     next = current->nlink;
-    slinkedlist_create(&(current->nlink), key);
+    slinkedlist_create(current->nlink, key);
     current = current->nlink;
     current->nlink = next;
     return DSA_OK;
@@ -298,7 +299,7 @@ dsa_err_t slinkedlist_remove_duplicates_in_sorted_list(slinkedlist_t *head)
     {
         if (current->data == current->nlink->data)
         {
-            next_next = current->nlink->next;
+            next_next = current->nlink->nlink;
             current->nlink = next_next;
         }
         else

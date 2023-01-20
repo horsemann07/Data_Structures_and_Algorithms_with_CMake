@@ -27,8 +27,8 @@ extern "C" {
  ************************************/
 typedef struct
 {
-    int size;
-    int *data;
+    uint32_t size;
+    int32_t *data;
     uint32_t cindex;
 } list_t;
 

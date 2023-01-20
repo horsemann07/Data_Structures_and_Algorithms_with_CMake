@@ -22,13 +22,13 @@ extern "C" {
 /************************************
  * TYPEDEFS
  ************************************/
-// typedef struct s_linkedlist slinkedlist_t;
+typedef struct s_linkedlist slinkedlist_t;
 
 /**
  * @brief Singly Linked List structure
  *
  */
-typedef struct
+typedef struct s_linkedlist
 {
     int data;
     slinkedlist_t *nlink;
@@ -49,9 +49,9 @@ typedef struct
  * @param key
  * @return dsa_err_t
  */
-dsa_err_t slinkedlist_create_node(slinkedlist_t *llist, int key);
+dsa_err_t slinkedlist_create(slinkedlist_t *llist, int key);
 
-sa_err_t slinkedlist_display_data(slinkedlist_t *head);
+dsa_err_t slinkedlist_display_data(slinkedlist_t *head);
 
 dsa_err_t slinkedlist_length(slinkedlist_t *head, uint32_t *len);
 
@@ -68,7 +68,7 @@ dsa_err_t slinkedlist_is_lists_match(slinkedlist_t *head1, slinkedlist_t *head2)
 dsa_err_t slinkedlist_merge_sorted_list(
     slinkedlist_t *head1, slinkedlist_t *head2, slinkedlist_t *merge);
 
-sa_err_t slinkedlist_get_node(slinkedlist_t *head, uint32_t pos, int *value);
+dsa_err_t slinkedlist_get_node(slinkedlist_t *head, uint32_t pos, int *value);
 
 dsa_err_t slinkedlist_remove_duplicates(slinkedlist_t *head);
 
