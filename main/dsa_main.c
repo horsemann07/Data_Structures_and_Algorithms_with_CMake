@@ -45,30 +45,6 @@
 
 int main()
 {
-    printf("testing the dsa..\n");
-
-    dsa_err_t ret = DSA_OK;
-    list_t list;
-    if (list_create(&list, 10) != DSA_OK)
-    {
-        printf("failed to create list\n");
-    }
-    else
-    {
-        printf("list created.\n");
-    }
-
-    for (int i = 0; i < list.size; i++)
-    {
-        list.data[i] = rand() % 10;
-    }
-    list_display_data(&list);
-    int min;
-    list_get_min(&list, &min);
-    printf("min %d\n", min);
-
-    list_reverse(&list);
-    printf("reverse\n");
-    list_display_data(&list);
+    printf("DATA STRUCTURE AND ALGORITHM \n");
     return DSA_OK;
 }

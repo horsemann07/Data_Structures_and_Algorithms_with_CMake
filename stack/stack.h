@@ -9,9 +9,9 @@ extern "C" {
 
 typedef struct
 {
-    int32_t *st_base;
     size_t size;
     size_t top;
+    void *st_base;
 } stack_t;
 
 /**
@@ -58,7 +58,7 @@ dsa_err_t stack_is_full(stack_t *stack);
  *      - DSA_FAIL:
  *      - DSA_OK
  */
-dsa_err_t stack_push(stack_t *stack, int32_t item);
+dsa_err_t stack_push(stack_t *stack, void *item);
 
 /**
  * @brief
@@ -71,7 +71,7 @@ dsa_err_t stack_push(stack_t *stack, int32_t item);
  *      - DSA_FAIL:
  *      - DSA_OK
  */
-dsa_err_t stack_pop(stack_t *stack, int32_t *item);
+dsa_err_t stack_pop(stack_t *stack, void *item);
 
 /**
  * @brief
@@ -83,7 +83,7 @@ dsa_err_t stack_pop(stack_t *stack, int32_t *item);
  *      - DSA_FAIL:
  *      - DSA_OK
  */
-dsa_err_t stack_peek(stack_t *stack, int32_t *item);
+dsa_err_t stack_peek(stack_t *stack, void *item);
 
 /**
  * @brief
@@ -94,7 +94,7 @@ dsa_err_t stack_peek(stack_t *stack, int32_t *item);
  *      - DSA_FAIL:
  *      - DSA_OK
  */
-dsa_err_t stack_print_data(stack_t *stack);
+dsa_err_t stack_print_data(stack_t *stack, bool is_char);
 
 /**
  * @brief

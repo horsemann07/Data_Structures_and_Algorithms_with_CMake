@@ -8,18 +8,18 @@
  *
  */
 
-#include "stack.h"
 #include <string.h>
+#include "stack.h"
 
 dsa_err_t stack_init(stack_t *stack, uint32_t size)
 {
     DSA_CHECK_ARG(stack);
-
-    stack->st_base = (int32_t *)calloc((size_t)size, sizeof(int32_t));
+    stack->st_base = (void *)malloc((size_t)size);
     if (!(stack->st_base))
     {
         return DSA_NO_MEM;
     }
+    memset(stack->st_base, 0, (size_t)size);
     stack->top = 0;
     stack->size = size;
     return DSA_OK;
@@ -47,7 +47,7 @@ dsa_err_t stack_is_full(stack_t *stack)
     return DSA_OK;
 }
 
-dsa_err_t stack_push(stack_t *stack, int32_t item)
+dsa_err_t stack_push(stack_t *stack, void *item)
 {
     DSA_CHECK_ARG(stack && stack->st_base);
 
@@ -55,12 +55,13 @@ dsa_err_t stack_push(stack_t *stack, int32_t item)
     {
         return DSA_FAIL;
     }
+    memcpy(&stack->st_base[stack->top], item, 1);
+    stack->top++;
 
-    stack->st_base[(stack->top)++] = item;
     return DSA_OK;
 }
 
-dsa_err_t stack_pop(stack_t *stack, int32_t *item)
+dsa_err_t stack_pop(stack_t *stack, void *item)
 {
     DSA_CHECK_ARG(stack && stack->st_base);
 
@@ -68,12 +69,14 @@ dsa_err_t stack_pop(stack_t *stack, int32_t *item)
     {
         return DSA_FAIL;
     }
-    *item = stack->st_base[stack->top - 1];
-    stack->st_base[stack->top--] = 0;
+    item = &stack->st_base[stack->top];
+    memset(&stack->st_base[stack->top], 0, 1);
+    stack->top--;
+
     return DSA_OK;
 }
 
-dsa_err_t stack_peek(stack_t *stack, int32_t *item)
+dsa_err_t stack_peek(stack_t *stack, void *item)
 {
     DSA_CHECK_ARG(stack && stack->st_base);
 
@@ -81,17 +84,24 @@ dsa_err_t stack_peek(stack_t *stack, int32_t *item)
     {
         return DSA_FAIL;
     }
-    *item = stack->st_base[stack->top - 1];
+    item = &stack->st_base[stack->top - 1];
     return DSA_OK;
 }
 
-dsa_err_t stack_print_data(stack_t *stack)
+dsa_err_t stack_print_data(stack_t *stack, bool is_char)
 {
     DSA_CHECK_ARG(stack);
 
     for (int i = 0; i < stack->top; i++)
     {
-        printf("%d\t", stack->st_base[i]);
+        if (is_char)
+        {
+            printf("%c\t", ((char *)stack->st_base)[i]);
+        }
+        else
+        {
+            printf("%d\t", ((int32_t *)stack->st_base)[i]);
+        }
         if (i % 5 == 0)
         {
             printf("\n");
@@ -121,7 +131,7 @@ dsa_err_t stack_is_parenthes_balance(const char *expression)
     {
         if (exp[i] == '(' || exp[i] == '{' || exp[i] == '[')
         {
-            stack_push(&stack, exp[i]);
+            stack_push(&stack, (void *)exp[i]);
         }
         else if (exp[i] == ')' || exp[i] == '}' || exp[i] == ']')
         {
@@ -132,7 +142,7 @@ dsa_err_t stack_is_parenthes_balance(const char *expression)
 
             char bracket;
 
-            stack_pop(&stack, (int32_t *)bracket);
+            stack_pop(&stack, (void *)&bracket);
             if (!(exp[i] == ')' && bracket == '(') && !(exp[i] == '}' && bracket == '{')
                 && !(exp[i] == ']' && bracket == '['))
             {

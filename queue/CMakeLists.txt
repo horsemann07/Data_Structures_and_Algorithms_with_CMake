@@ -1,6 +1,7 @@
 
 set(queue_src
-    "queue.c")
+    "queue.c"
+    "circular.c")
 
 set(queue_incs
     "./")

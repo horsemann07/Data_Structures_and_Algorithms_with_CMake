@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../config/dsa.h
+stdio.h
+-
+stdint.h
+-
+stdlib.h
+-
+stdbool.h
+-
+
+/home/raghav/Workspace/Personal/data_structure_in_c/stack/stack.c
+string.h
+-
+stack.h
+/home/raghav/Workspace/Personal/data_structure_in_c/stack/stack.h
+
+/home/raghav/Workspace/Personal/data_structure_in_c/stack/stack.h
+dsa.h
+/home/raghav/Workspace/Personal/data_structure_in_c/stack/dsa.h
+

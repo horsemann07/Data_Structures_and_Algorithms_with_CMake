@@ -1,0 +1,1 @@
+/usr/bin/gcc -g   CMakeFiles/unit_tests.dir/test_main.c.o CMakeFiles/unit_tests.dir/list_ut.c.o CMakeFiles/unit_tests.dir/stack/test_stack.c.o CMakeFiles/unit_tests.dir/queue/test_queue.c.o  -o unit_tests  ../list/liblist.a ../stack/libstack.a ../queue/libqueue.a ../third_party/unity/libunity.a 

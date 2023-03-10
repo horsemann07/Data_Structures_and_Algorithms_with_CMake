@@ -28,8 +28,8 @@ extern "C" {
 typedef struct
 {
     uint32_t size;
-    int32_t *data;
     uint32_t cindex;
+    int32_t *data;
 } list_t;
 
 /************************************

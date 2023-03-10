@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/raghav/Workspace/Personal/data_structure_in_c/third_party/unity/src/unity.c
+unity.h
+/home/raghav/Workspace/Personal/data_structure_in_c/third_party/unity/src/unity.h
+stddef.h
+-
+
+/home/raghav/Workspace/Personal/data_structure_in_c/third_party/unity/src/unity.h
+unity_internals.h
+/home/raghav/Workspace/Personal/data_structure_in_c/third_party/unity/src/unity_internals.h
+
+/home/raghav/Workspace/Personal/data_structure_in_c/third_party/unity/src/unity_internals.h
+unity_config.h
+/home/raghav/Workspace/Personal/data_structure_in_c/third_party/unity/src/unity_config.h
+setjmp.h
+-
+math.h
+-
+stddef.h
+-
+stdarg.h
+-
+stdint.h
+-
+limits.h
+-
+sdkddkver.h
+-
+stdnoreturn.h
+-
+stdio.h
+-
+stdio.h
+-
+time.h
+-
+time.h
+-
+

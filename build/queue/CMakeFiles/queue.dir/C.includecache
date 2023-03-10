@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../config/dsa.h
+stdio.h
+-
+stdint.h
+-
+stdlib.h
+-
+stdbool.h
+-
+
+../config/dsa_config.h
+stdint.h
+-
+stdio.h
+-
+stdbool.h
+-
+
+/home/raghav/Workspace/Personal/data_structure_in_c/queue/circular.c
+queue.h
+/home/raghav/Workspace/Personal/data_structure_in_c/queue/queue.h
+
+/home/raghav/Workspace/Personal/data_structure_in_c/queue/queue.c
+queue.h
+/home/raghav/Workspace/Personal/data_structure_in_c/queue/queue.h
+
+/home/raghav/Workspace/Personal/data_structure_in_c/queue/queue.h
+dsa.h
+/home/raghav/Workspace/Personal/data_structure_in_c/queue/dsa.h
+dsa_config.h
+/home/raghav/Workspace/Personal/data_structure_in_c/queue/dsa_config.h
+

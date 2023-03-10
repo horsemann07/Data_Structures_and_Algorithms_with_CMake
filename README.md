@@ -12,7 +12,7 @@ Algorithm is defined as a process or set of well-defined instructions that are t
 - [ ] 2. String
 - [x] 3. Linked List
 - [ ] 4. Matrix/Grid
-- [ ] 5. Stack
+- [x] 5. Stack
 - [ ] 6. Queue
 - [ ] 7. Heap
 - [ ] 8. Hash

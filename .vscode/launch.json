@@ -6,7 +6,7 @@
             "preLaunchTask": "build",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/test/unit_test",
+            "program": "${workspaceFolder}/build/test/unit_tests",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
