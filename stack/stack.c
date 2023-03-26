@@ -8,8 +8,8 @@
  *
  */
 
-#include <string.h>
 #include "stack.h"
+#include <string.h>
 
 dsa_err_t stack_init(stack_t *stack, uint32_t size)
 {

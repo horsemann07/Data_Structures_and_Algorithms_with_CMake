@@ -1,2 +1,0 @@
-/usr/bin/ar qc libstringg.a  CMakeFiles/stringg.dir/stringg.c.o
-/usr/bin/ranlib libstringg.a

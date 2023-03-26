@@ -1,8 +1,0 @@
-digraph "stack" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  dir_ab51a11a65415835ab0b627ec1ba1885 [shape=box, label="stack", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ab51a11a65415835ab0b627ec1ba1885.html"];
-  dir_9f351d46ce3cc29445a41dc3a31e6919 [shape=box label="config" URL="dir_9f351d46ce3cc29445a41dc3a31e6919.html"];
-  dir_ab51a11a65415835ab0b627ec1ba1885->dir_9f351d46ce3cc29445a41dc3a31e6919 [headlabel="2", labeldistance=1.5 headhref="dir_000020_000019.html"];
-}

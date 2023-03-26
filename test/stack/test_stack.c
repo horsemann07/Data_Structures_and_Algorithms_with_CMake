@@ -31,10 +31,11 @@ void test_StackPush(void)
 
 void test_StackPop(void)
 {
-    int32_t pop;
-    TEST_ASSERT_EQUAL(DSA_OK, stack_pop(&stack, &pop));
-    TEST_ASSERT_EQUAL_INT(pop, 32);
-    TEST_ASSERT_EQUAL(DSA_OK, stack_pop(&stack, &pop));
+    void *pop;
+    TEST_ASSERT_EQUAL(DSA_OK, stack_pop(&stack, pop));
+    int32_t *value = (int32_t *)pop;
+    TEST_ASSERT_EQUAL_INT(32, *value);
+    TEST_ASSERT_EQUAL(DSA_OK, stack_pop(&stack, pop));
 }
 
 void test_StackEmpty(void)

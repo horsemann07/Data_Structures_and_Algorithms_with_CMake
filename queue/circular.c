@@ -59,7 +59,7 @@ dsa_err_t queue_circular_dequeue(queue_t *queue, int32_t *data)
 {
     dsa_err_t ret = DSA_OK;
     int32_t front;
-    ret = queue_ciruclar_front(queue, &front);
+    ret = queue_circular_front(queue, &front);
     if (ret != DSA_OK)
     {
         return ret;
