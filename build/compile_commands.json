@@ -1,0 +1,61 @@
+[
+{
+  "directory": "/home/raghav/Workspace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../graph/.  -g   -std=gnu99 -o graph/CMakeFiles/graph.dir/graph.c.o   -c /home/raghav/Workspace/Personal/data_structure_in_c/graph/graph.c",
+  "file": "/home/raghav/Workspace/Personal/data_structure_in_c/graph/graph.c"
+},
+
+{
+  "directory": "/home/raghav/Workspace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../linkedlist/.  -g   -std=gnu99 -o linkedlist/CMakeFiles/linkedlist.dir/linkedlist.c.o   -c /home/raghav/Workspace/Personal/data_structure_in_c/linkedlist/linkedlist.c",
+  "file": "/home/raghav/Workspace/Personal/data_structure_in_c/linkedlist/linkedlist.c"
+},
+
+{
+  "directory": "/home/raghav/Workspace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../list/.  -g   -std=gnu99 -o list/CMakeFiles/list.dir/list.c.o   -c /home/raghav/Workspace/Personal/data_structure_in_c/list/list.c",
+  "file": "/home/raghav/Workspace/Personal/data_structure_in_c/list/list.c"
+},
+
+{
+  "directory": "/home/raghav/Workspace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../queue/.  -g   -std=gnu99 -o queue/CMakeFiles/queue.dir/queue.c.o   -c /home/raghav/Workspace/Personal/data_structure_in_c/queue/queue.c",
+  "file": "/home/raghav/Workspace/Personal/data_structure_in_c/queue/queue.c"
+},
+
+{
+  "directory": "/home/raghav/Workspace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../queue/.  -g   -std=gnu99 -o queue/CMakeFiles/queue.dir/circular.c.o   -c /home/raghav/Workspace/Personal/data_structure_in_c/queue/circular.c",
+  "file": "/home/raghav/Workspace/Personal/data_structure_in_c/queue/circular.c"
+},
+
+{
+  "directory": "/home/raghav/Workspace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../stack/.  -g   -std=gnu99 -o stack/CMakeFiles/stack.dir/stack.c.o   -c /home/raghav/Workspace/Personal/data_structure_in_c/stack/stack.c",
+  "file": "/home/raghav/Workspace/Personal/data_structure_in_c/stack/stack.c"
+},
+
+{
+  "directory": "/home/raghav/Workspace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../stringg/.  -g   -std=gnu99 -o stringg/CMakeFiles/stringg.dir/stringg.c.o   -c /home/raghav/Workspace/Personal/data_structure_in_c/stringg/stringg.c",
+  "file": "/home/raghav/Workspace/Personal/data_structure_in_c/stringg/stringg.c"
+},
+
+{
+  "directory": "/home/raghav/Workspace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../sorting/. -I../list/. -I../linkedlist/.  -g   -std=gnu99 -o sorting/CMakeFiles/sorting.dir/sorting.c.o   -c /home/raghav/Workspace/Personal/data_structure_in_c/sorting/sorting.c",
+  "file": "/home/raghav/Workspace/Personal/data_structure_in_c/sorting/sorting.c"
+},
+
+{
+  "directory": "/home/raghav/Workspace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../tree/.  -g   -std=gnu99 -o tree/CMakeFiles/tree.dir/tree.c.o   -c /home/raghav/Workspace/Personal/data_structure_in_c/tree/tree.c",
+  "file": "/home/raghav/Workspace/Personal/data_structure_in_c/tree/tree.c"
+},
+
+{
+  "directory": "/home/raghav/Workspace/Personal/data_structure_in_c/build",
+  "command": "/usr/bin/gcc  -I../config -I../list/. -I../linkedlist/. -I../queue/. -I../stack/. -I../tree/. -I../graph/. -I../sorting/. -I../stringg/.  -g   -fdiagnostics-color=always -o main/CMakeFiles/dsa_main.dir/dsa_main.c.o   -c /home/raghav/Workspace/Personal/data_structure_in_c/main/dsa_main.c",
+  "file": "/home/raghav/Workspace/Personal/data_structure_in_c/main/dsa_main.c"
+}
+]

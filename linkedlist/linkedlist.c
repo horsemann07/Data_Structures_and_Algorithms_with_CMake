@@ -6,8 +6,8 @@
  * @date 11-01-2023
  */
 
-#include "dsa.h"
 #include "linkedlist.h"
+#include "dsa.h"
 
 dsa_err_t slinkedlist_create(slinkedlist_t *llist, int key)
 {

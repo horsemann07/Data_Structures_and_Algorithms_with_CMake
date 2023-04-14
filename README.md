@@ -9,11 +9,11 @@ Algorithm is defined as a process or set of well-defined instructions that are t
 ## Topics
 
 - [x] 1. Array
-- [ ] 2. String
+- [x] 2. String
 - [x] 3. Linked List
 - [ ] 4. Matrix/Grid
 - [x] 5. Stack
-- [ ] 6. Queue
+- [x] 6. Queue
 - [ ] 7. Heap
 - [ ] 8. Hash
 - [ ] 9. Tree Data Structures
@@ -22,7 +22,7 @@ Algorithm is defined as a process or set of well-defined instructions that are t
 - [ ] 12. Other Tree Data Structures
 - [ ] 13. Graph Data Structure
 - [ ] 14. Learn Algorithms
-- [ ] 15. Searching Algorithm
+- [x] 15. Searching Algorithm
 - [ ] 16. Sorting Algorithm
 - [ ] 17. Divide and Conquer Algorithm
 - [ ] 18. Greedy Mehtodology

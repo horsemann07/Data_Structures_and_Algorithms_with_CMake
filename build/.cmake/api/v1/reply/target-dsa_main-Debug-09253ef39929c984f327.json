@@ -1,0 +1,247 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "main/dsa_main"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"add_compile_options",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"main/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 90,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 10,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g  "
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-fdiagnostics-color=always"
+				},
+				{
+					"fragment" : "-std=gnu99"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/home/raghav/Workspace/Personal/data_structure_in_c/config"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/raghav/Workspace/Personal/data_structure_in_c/list/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/raghav/Workspace/Personal/data_structure_in_c/linkedlist/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/raghav/Workspace/Personal/data_structure_in_c/queue/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/raghav/Workspace/Personal/data_structure_in_c/stack/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/raghav/Workspace/Personal/data_structure_in_c/tree/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/raghav/Workspace/Personal/data_structure_in_c/graph/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/raghav/Workspace/Personal/data_structure_in_c/sorting/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/raghav/Workspace/Personal/data_structure_in_c/stringg/."
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "graph::@24f0212b3bb5eb7e3fe6"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "linkedlist::@2b41372ef9d5442a80fe"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "list::@9d402429e34d9136414f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "queue::@d63f5f69c5a9088733ed"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "stack::@b5371760465ddb38638a"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "stringg::@63243ce47c0ba44eff92"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sorting::@731c94c3589c2bb2a028"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tree::@08328a494b2f609a5757"
+		}
+	],
+	"id" : "dsa_main::@15c4a824ab2728a3f5e7",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../list/liblist.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../linkedlist/liblinkedlist.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../queue/libqueue.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../stack/libstack.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../tree/libtree.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../graph/libgraph.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../sorting/libsorting.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../stringg/libstringg.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../list/liblist.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../linkedlist/liblinkedlist.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "dsa_main",
+	"nameOnDisk" : "dsa_main",
+	"paths" : 
+	{
+		"build" : "main",
+		"source" : "main"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "main/dsa_main.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

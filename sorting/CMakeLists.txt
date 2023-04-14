@@ -13,4 +13,4 @@ target_include_directories(${sorting_lib} PUBLIC
     ${dsa_config}  
     ${sorting_incs})
 
-target_link_libraries(${sorting_lib} PUBLIC ${list_lib})
+target_link_libraries(${sorting_lib} PUBLIC ${list_lib} ${linkedlist_lib})
