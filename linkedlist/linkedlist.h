@@ -30,9 +30,14 @@ typedef struct s_linkedlist slinkedlist_t;
  */
 typedef struct s_linkedlist
 {
-    int data;
+    int32_t data;
     slinkedlist_t *nlink;
 } slinkedlist_t;
+
+
+
+
+
 
 /************************************
  * EXPORTED VARIABLES

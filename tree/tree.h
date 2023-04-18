@@ -3,7 +3,7 @@
  * @file    ${file_name}
  * @author  ${user}
  * @date    ${date}
- * @brief   
+ * @brief
  ********************************************************************************
  */
 
@@ -15,25 +15,16 @@ extern "C" {
  * INCLUDES
  ************************************/
 #include "dsa.h"
-/************************************
- * MACROS AND DEFINES
- ************************************/
 
-/************************************
- * TYPEDEFS
- ************************************/
+typedef struct d_linkedlist dlinkedlist_t;
 
-/************************************
- * EXPORTED VARIABLES
- ************************************/
-
-/************************************
- * GLOBAL FUNCTION PROTOTYPES
- ************************************/
-
+typedef struct d_linkedlist
+{
+    int32_t data;         /*! current node data*/
+    dlinkedlist_t *llink; /*! left child*/
+    dlinkedlist_t *rlink; /*! right child*/
+} dlinkedlist_t;
 
 #ifdef __cplusplus
 }
 #endif
-
-

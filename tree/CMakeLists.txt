@@ -1,6 +1,6 @@
 
 set(tree_src
-"tree.c")
+"binary_tree.c")
 
 set(tree_incs
 "./")
@@ -11,3 +11,5 @@ ${tree_src})
 target_include_directories(${tree_lib} PUBLIC
     ${dsa_config}
     ${tree_incs})
+
+target_link_libraries(${tree_lib} PUBLIC ${stack_lib} ${queue_lib})

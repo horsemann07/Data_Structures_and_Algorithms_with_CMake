@@ -20,7 +20,7 @@
 dsa_err_t queue_init(queue_t *queue, int32_t size)
 {
     DSA_CHECK_ARG(queue);
-    queue->data = (int32_t)malloc(sizeof(int32_t) * size);
+    queue->data = (int32_t *)malloc(sizeof(int32_t) * size);
     if (!queue->data)
     {
         return DSA_NO_MEM;
