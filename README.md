@@ -1,42 +1,44 @@
-# DATA STRUCTURE IN C
+# Data Structures and Algorithms with CMake
 
-## What is Data Structure?
-A data structure is defined as a particular way of storing and organizing data in our devices to use the data efficiently and effectively. The main idea behind using data structures is to minimize the time and space complexities. An efficient data structure takes minimum memory space and requires minimum time to execute the data.
+## Data Structures and Algorithms
 
-## What is Algorithm?
-Algorithm is defined as a process or set of well-defined instructions that are typically used to solve a particular group of problems or perform a specific type of calculation. To explain in simpler terms, it is a set of operations performed in a step-by-step manner to execute a task.
+This repository is dedicated to learning and practicing Data Structures and Algorithms (DSA) using C++ and CMake. It provides an organized collection of various DSA implementations along with CMake build scripts to compile and run the code
 
-## Topics
+## Table of Contents
+- Introduction
+- Installation
+- Usage
+- Contributing
+- License
 
-- [x] 1. Array
-- [x] 2. String
-- [x] 3. Linked List
-- [ ] 4. Matrix/Grid
-- [x] 5. Stack
-- [x] 6. Queue
-- [ ] 7. Heap
-- [ ] 8. Hash
-- [ ] 9. Tree Data Structures
-- [ ] 10. Binary Tree
-- [ ] 11. Binary Search Tree
-- [ ] 12. Other Tree Data Structures
-- [ ] 13. Graph Data Structure
-- [ ] 14. Learn Algorithms
-- [x] 15. Searching Algorithm
-- [ ] 16. Sorting Algorithm
-- [ ] 17. Divide and Conquer Algorithm
-- [ ] 18. Greedy Mehtodology
-- [ ] 19. Recursion
-- [ ] 20. Backtracking Algorithm
-- [ ] 21. Dynamic Programming
-- [ ] 22. Pattern Searching
-- [ ] 23. Mathematical Algorithms
-- [ ] 24. Geometric Algorithms
-- [ ] 25. Bitwise Algorithms
-- [ ] 26. Randomized Algorithms
-- [ ] 27. Branch and Bound Algorithm
-- [ ] 28. Practice problems on DSA
+## Introduction
+Learning Data Structures and Algorithms is crucial for anyone interested in computer science and software development. This repository aims to provide a hands-on learning experience by implementing various DSA concepts using C++.
 
-------------------------------------------------------
-- [ ] Unit Testing
-- [ ] Documentation
+The code is organized into different directories, each representing a specific data structure or algorithm. Each implementation is thoroughly documented and includes examples to demonstrate its usage. The repository covers a wide range of topics, including:
+
+- Arrays and Strings
+- Linked Lists
+- Stacks and Queues
+- Trees and Graphs
+- Sorting and Searching
+- Dynamic Programming
+- and more!
+#### Installation
+To use the code in this repository, follow these steps:
+ - TODO
+
+
+##Usage
+Each data structure and algorithm is implemented as a separate module within the repository. The code is written in C++ and is accompanied by detailed explanations and examples. You can explore the different directories and their respective files to study the implementations.
+
+To compile and run the code, follow the installation instructions provided above. Once the project is built, you can execute the generated executables to see the algorithms in action.
+
+Feel free to modify the code, experiment with different inputs, and explore alternative implementations. The goal is to deepen your understanding of DSA by actively engaging with the codebase.
+
+### Contributing
+Contributions to this repository are welcome! If you have any improvements or additional implementations of data structures and algorithms, feel free to submit a pull request.
+
+If you find any issues or have suggestions for improvement, please open an issue on the repository's GitHub page.
+
+## License
+This repository is licensed under the MIT License. You are free to use, modify, and distribute the code in this repository for personal and commercial purposes. See the LICENSE file for more details.
