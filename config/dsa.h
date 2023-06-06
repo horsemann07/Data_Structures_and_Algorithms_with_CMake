@@ -17,10 +17,10 @@ extern "C" {
 /************************************
  * INCLUDES
  ************************************/
-#include <stdio.h>
-#include <stdint.h>
-#include <stdlib.h>
 #include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /************************************
  * MACROS AND DEFINES

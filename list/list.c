@@ -198,12 +198,11 @@ dsa_err_t list_shift(list_t *list, uint32_t rotate, bool left_shift)
 dsa_err_t list_rotate(list_t *list, uint32_t rotate, bool left_rotation)
 {
     DSA_CHECK_ARG(list);
-    int rstart;
+    int rstart = 0;
     int end;
     int start = 0;
     if (left_rotation)
     {
-        rstart = 0;
         while (rstart < rotate)
         {
             int temp = list->data[0];
