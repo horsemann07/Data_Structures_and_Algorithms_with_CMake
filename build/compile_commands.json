@@ -1,0 +1,52 @@
+[
+{
+  "directory": "/home/horsemann/workspace/personal/data_structures_with_cmake/build/graph",
+  "command": "/usr/bin/cc  -I/home/horsemann/workspace/personal/data_structures_with_cmake/config -I/home/horsemann/workspace/personal/data_structures_with_cmake/graph/. -g -std=c99 -o CMakeFiles/graph.dir/graph.c.o -c /home/horsemann/workspace/personal/data_structures_with_cmake/graph/graph.c",
+  "file": "/home/horsemann/workspace/personal/data_structures_with_cmake/graph/graph.c"
+},
+{
+  "directory": "/home/horsemann/workspace/personal/data_structures_with_cmake/build/linkedlist",
+  "command": "/usr/bin/cc  -I/home/horsemann/workspace/personal/data_structures_with_cmake/config -I/home/horsemann/workspace/personal/data_structures_with_cmake/linkedlist/. -g -std=c99 -o CMakeFiles/linkedlist.dir/linkedlist.c.o -c /home/horsemann/workspace/personal/data_structures_with_cmake/linkedlist/linkedlist.c",
+  "file": "/home/horsemann/workspace/personal/data_structures_with_cmake/linkedlist/linkedlist.c"
+},
+{
+  "directory": "/home/horsemann/workspace/personal/data_structures_with_cmake/build/list",
+  "command": "/usr/bin/cc  -I/home/horsemann/workspace/personal/data_structures_with_cmake/config -I/home/horsemann/workspace/personal/data_structures_with_cmake/list/. -g -std=c99 -o CMakeFiles/list.dir/list.c.o -c /home/horsemann/workspace/personal/data_structures_with_cmake/list/list.c",
+  "file": "/home/horsemann/workspace/personal/data_structures_with_cmake/list/list.c"
+},
+{
+  "directory": "/home/horsemann/workspace/personal/data_structures_with_cmake/build/queue",
+  "command": "/usr/bin/cc  -I/home/horsemann/workspace/personal/data_structures_with_cmake/config -I/home/horsemann/workspace/personal/data_structures_with_cmake/queue/. -g -std=c99 -o CMakeFiles/queue.dir/queue.c.o -c /home/horsemann/workspace/personal/data_structures_with_cmake/queue/queue.c",
+  "file": "/home/horsemann/workspace/personal/data_structures_with_cmake/queue/queue.c"
+},
+{
+  "directory": "/home/horsemann/workspace/personal/data_structures_with_cmake/build/queue",
+  "command": "/usr/bin/cc  -I/home/horsemann/workspace/personal/data_structures_with_cmake/config -I/home/horsemann/workspace/personal/data_structures_with_cmake/queue/. -g -std=c99 -o CMakeFiles/queue.dir/circular.c.o -c /home/horsemann/workspace/personal/data_structures_with_cmake/queue/circular.c",
+  "file": "/home/horsemann/workspace/personal/data_structures_with_cmake/queue/circular.c"
+},
+{
+  "directory": "/home/horsemann/workspace/personal/data_structures_with_cmake/build/stack",
+  "command": "/usr/bin/cc  -I/home/horsemann/workspace/personal/data_structures_with_cmake/config -I/home/horsemann/workspace/personal/data_structures_with_cmake/stack/. -g -std=c99 -o CMakeFiles/stack.dir/stack.c.o -c /home/horsemann/workspace/personal/data_structures_with_cmake/stack/stack.c",
+  "file": "/home/horsemann/workspace/personal/data_structures_with_cmake/stack/stack.c"
+},
+{
+  "directory": "/home/horsemann/workspace/personal/data_structures_with_cmake/build/stringg",
+  "command": "/usr/bin/cc  -I/home/horsemann/workspace/personal/data_structures_with_cmake/config -I/home/horsemann/workspace/personal/data_structures_with_cmake/stringg/. -g -std=c99 -o CMakeFiles/stringg.dir/stringg.c.o -c /home/horsemann/workspace/personal/data_structures_with_cmake/stringg/stringg.c",
+  "file": "/home/horsemann/workspace/personal/data_structures_with_cmake/stringg/stringg.c"
+},
+{
+  "directory": "/home/horsemann/workspace/personal/data_structures_with_cmake/build/sorting",
+  "command": "/usr/bin/cc  -I/home/horsemann/workspace/personal/data_structures_with_cmake/config -I/home/horsemann/workspace/personal/data_structures_with_cmake/sorting/. -I/home/horsemann/workspace/personal/data_structures_with_cmake/list/. -I/home/horsemann/workspace/personal/data_structures_with_cmake/linkedlist/. -g -std=c99 -o CMakeFiles/sorting.dir/sorting.c.o -c /home/horsemann/workspace/personal/data_structures_with_cmake/sorting/sorting.c",
+  "file": "/home/horsemann/workspace/personal/data_structures_with_cmake/sorting/sorting.c"
+},
+{
+  "directory": "/home/horsemann/workspace/personal/data_structures_with_cmake/build/tree",
+  "command": "/usr/bin/cc  -I/home/horsemann/workspace/personal/data_structures_with_cmake/config -I/home/horsemann/workspace/personal/data_structures_with_cmake/tree/. -I/home/horsemann/workspace/personal/data_structures_with_cmake/stack/. -I/home/horsemann/workspace/personal/data_structures_with_cmake/queue/. -g -std=c99 -o CMakeFiles/tree.dir/binary_tree.c.o -c /home/horsemann/workspace/personal/data_structures_with_cmake/tree/binary_tree.c",
+  "file": "/home/horsemann/workspace/personal/data_structures_with_cmake/tree/binary_tree.c"
+},
+{
+  "directory": "/home/horsemann/workspace/personal/data_structures_with_cmake/build/main",
+  "command": "/usr/bin/cc  -I/home/horsemann/workspace/personal/data_structures_with_cmake/config -I/home/horsemann/workspace/personal/data_structures_with_cmake/list/. -I/home/horsemann/workspace/personal/data_structures_with_cmake/linkedlist/. -I/home/horsemann/workspace/personal/data_structures_with_cmake/queue/. -I/home/horsemann/workspace/personal/data_structures_with_cmake/stack/. -I/home/horsemann/workspace/personal/data_structures_with_cmake/tree/. -I/home/horsemann/workspace/personal/data_structures_with_cmake/graph/. -I/home/horsemann/workspace/personal/data_structures_with_cmake/sorting/. -I/home/horsemann/workspace/personal/data_structures_with_cmake/stringg/.  -pg -g -g -O0 -fdiagnostics-color=always -std=c99 -o CMakeFiles/dsa_main.dir/dsa_main.c.o -c /home/horsemann/workspace/personal/data_structures_with_cmake/main/dsa_main.c",
+  "file": "/home/horsemann/workspace/personal/data_structures_with_cmake/main/dsa_main.c"
+}
+]

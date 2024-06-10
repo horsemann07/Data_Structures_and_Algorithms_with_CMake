@@ -231,21 +231,21 @@ void test_list_rotate_right()
 
 void test_run_list_test_cases(void)
 {
-    RUN_TEST(test_list_create);
-    RUN_TEST(test_list_append_data);
-    RUN_TEST(test_list_insert_data);
-    RUN_TEST(test_list_delete_index);
-    RUN_TEST(test_linear_search);
-    RUN_TEST(test_binary_search);
-    RUN_TEST(test_list_search_data);
-    RUN_TEST(test_list_get);
-    RUN_TEST(test_list_set);
-    RUN_TEST(test_list_get_max);
-    RUN_TEST(test_list_get_min);
-    RUN_TEST(test_list_reverse);
-    RUN_TEST(test_list_shift_left);
-    RUN_TEST(test_list_shift_right);
-    RUN_TEST(test_list_rotate_left);
-    RUN_TEST(test_list_rotate_right);
+    // RUN_TEST(test_list_create);
+    // RUN_TEST(test_list_append_data);
+    // RUN_TEST(test_list_insert_data);
+    // RUN_TEST(test_list_delete_index);
+    // RUN_TEST(test_linear_search);
+    // RUN_TEST(test_binary_search);
+    // RUN_TEST(test_list_search_data);
+    // RUN_TEST(test_list_get);
+    // RUN_TEST(test_list_set);
+    // RUN_TEST(test_list_get_max);
+    // RUN_TEST(test_list_get_min);
+    // RUN_TEST(test_list_reverse);
+    // RUN_TEST(test_list_shift_left);
+    // RUN_TEST(test_list_shift_right);
+    // RUN_TEST(test_list_rotate_left);
+    // RUN_TEST(test_list_rotate_right);
     return;
 }

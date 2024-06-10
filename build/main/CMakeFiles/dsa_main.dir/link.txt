@@ -1,0 +1,1 @@
+/usr/bin/cc  -pg -g -g -O0 CMakeFiles/dsa_main.dir/dsa_main.c.o -o dsa_main  ../list/liblist.a ../linkedlist/liblinkedlist.a ../queue/libqueue.a ../stack/libstack.a ../tree/libtree.a ../graph/libgraph.a ../sorting/libsorting.a ../stringg/libstringg.a ../queue/libqueue.a ../stack/libstack.a ../list/liblist.a ../linkedlist/liblinkedlist.a 

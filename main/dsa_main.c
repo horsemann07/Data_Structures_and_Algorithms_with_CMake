@@ -24,7 +24,7 @@
 // #define listlist_main main
 
 // #elif defined(LIST)
-// #include "list.h"
+#include "list.h"
 // #define list_main main
 
 // #elif defined(QUEUE)
@@ -46,5 +46,70 @@
 int main()
 {
     printf("DATA STRUCTURE AND ALGORITHM \n");
+    list_t list = {0};
+    dsa_err_t ret = list_create(&list, 10);
+    if(ret != DSA_OK)
+    {
+        printf("ERROR: LIST CREATE FAILED");
+    }
+    else 
+    {
+        printf("Info: LIST CREATE PASSED");
+    }
+    ret = list_create(&list, 10);
+    if(ret != DSA_OK)
+    {
+        printf("ERROR: LIST CREATE FAILED");
+    }
+    else 
+    {
+        printf("Info: LIST CREATE PASSED");
+    }
+
+    ret = list_create(&list, 10);
+    if(ret != DSA_OK)
+    {
+        printf("ERROR: LIST CREATE FAILED");
+    }
+    else 
+    {
+        printf("Info: LIST CREATE PASSED");
+    }
+    ret = list_create(&list, 10);
+    if(ret != DSA_OK)
+    {
+        printf("ERROR: LIST CREATE FAILED");
+    }
+    else 
+    {
+        printf("Info: LIST CREATE PASSED");
+    }
+    ret = list_create(&list, 10);
+    if(ret != DSA_OK)
+    {
+        printf("ERROR: LIST CREATE FAILED");
+    }
+    else 
+    {
+        printf("Info: LIST CREATE PASSED");
+    }
+    ret = list_create(&list, 10);
+    if(ret != DSA_OK)
+    {
+        printf("ERROR: LIST CREATE FAILED");
+    }
+    else 
+    {
+        printf("Info: LIST CREATE PASSED");
+    }
+    ret = list_create(&list, 10);
+    if(ret != DSA_OK)
+    {
+        printf("ERROR: LIST CREATE FAILED");
+    }
+    else 
+    {
+        printf("Info: LIST CREATE PASSED");
+    }
     return DSA_OK;
 }

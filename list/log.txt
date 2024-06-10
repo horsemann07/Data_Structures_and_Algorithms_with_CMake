@@ -1,0 +1,4 @@
+Checking list/list.c ...
+list/list.c:185:18: error: Uninitialized variable: end [uninitvar]
+        sstart = end - rotate;
+                 ^

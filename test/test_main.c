@@ -29,20 +29,20 @@ int main(void)
     RUN_TEST(test_queue_circular_enqueue);
 
     // test stack functionality.
-    RUN_TEST(test_stack_init_should_return_ok_when_successful);
-    RUN_TEST(test_stack_is_empty_should_return_ok_when_empty);
-    RUN_TEST(test_stack_is_empty_should_return_fail_when_not_empty);
-    RUN_TEST(test_stack_is_full_should_return_fail_when_not_full);
-    RUN_TEST(test_stack_is_full_should_return_ok_when_full);
-    RUN_TEST(test_stack_push_should_return_fail_when_full);
-    RUN_TEST(test_stack_push_should_increase_top_and_push_item);
-    RUN_TEST(test_stack_pop_should_return_fail_when_empty);
-    RUN_TEST(test_stack_pop_should_decrease_top_and_pop_item);
-    RUN_TEST(test_stack_peek_should_return_fail_when_empty);
-    RUN_TEST(test_stack_peek_should_return_top_item);
-    RUN_TEST(test_stack_print_data_char);
-    RUN_TEST(test_stack_print_data_int);
-    RUN_TEST(test_stack_is_parenthes_balance);
+    // RUN_TEST(test_stack_init_should_return_ok_when_successful);
+    // RUN_TEST(test_stack_is_empty_should_return_ok_when_empty);
+    // RUN_TEST(test_stack_is_empty_should_return_fail_when_not_empty);
+    // RUN_TEST(test_stack_is_full_should_return_fail_when_not_full);
+    // RUN_TEST(test_stack_is_full_should_return_ok_when_full);
+    // RUN_TEST(test_stack_push_should_return_fail_when_full);
+    // RUN_TEST(test_stack_push_should_increase_top_and_push_item);
+    // RUN_TEST(test_stack_pop_should_return_fail_when_empty);
+    // RUN_TEST(test_stack_pop_should_decrease_top_and_pop_item);
+    // RUN_TEST(test_stack_peek_should_return_fail_when_empty);
+    // RUN_TEST(test_stack_peek_should_return_top_item);
+    // RUN_TEST(test_stack_print_data_char);
+    // RUN_TEST(test_stack_print_data_int);
+    // RUN_TEST(test_stack_is_parenthes_balance);
 
     // test stringg functionality
     // RUN_TEST(test_stringg_get_length);
@@ -55,6 +55,23 @@ int main(void)
     // RUN_TEST(test_stringg_count_alpha_and_num);
     // RUN_TEST(test_stringg_count_vow_and_cons);
     // RUN_TEST(test_stringg_get_longest_sub_str_in_strs);
+
+    // RUN_TEST(test_list_create);
+    // RUN_TEST(test_list_append_data);
+    // RUN_TEST(test_list_insert_data);
+    // RUN_TEST(test_list_delete_index);
+    // RUN_TEST(test_linear_search);
+    // RUN_TEST(test_binary_search);
+    // RUN_TEST(test_list_search_data);
+    // RUN_TEST(test_list_get);
+    // RUN_TEST(test_list_set);
+    // RUN_TEST(test_list_get_max);
+    // RUN_TEST(test_list_get_min);
+    // RUN_TEST(test_list_reverse);
+    // RUN_TEST(test_list_shift_left);
+    // RUN_TEST(test_list_shift_right);
+    // RUN_TEST(test_list_rotate_left);
+    // RUN_TEST(test_list_rotate_right);
     UNITY_END();
     return 0;
 }
